@@ -3,13 +3,13 @@
 *.tfstate.backup
 
 # Module directory
+.terraform/
 .terraform
 __pycache__/
 .idea
 *.iml
 *.orig
-.build-harness
-build-harness
+
 *.ini
 *~HEAD
 *backup
