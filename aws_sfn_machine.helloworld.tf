@@ -81,7 +81,7 @@ EOF
 
 
 resource "aws_iam_role" "statemachine" {
-  path                  = "/service-role/"
+  path               = "/service-role/"
   assume_role_policy = <<POLICY
 {
   "Version": "2012-10-17",
