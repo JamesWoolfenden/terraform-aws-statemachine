@@ -1,5 +1,4 @@
 common_tags = {
-  application = "terraform"
-  module      = "statemachine"
-  author      = "James Woolfenden"
+  createdby = "terraform"
+  module    = "terraform-aws-statemachine"
 }
