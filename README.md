@@ -37,15 +37,16 @@ common_tags={
 ```
 
 <!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
+
 ## Requirements
 
 No requirements.
 
 ## Providers
 
-| Name | Version |
-|------|---------|
-| <a name="provider_aws"></a> [aws](#provider\_aws) | n/a |
+| Name                                             | Version |
+| ------------------------------------------------ | ------- |
+| <a name="provider_aws"></a> [aws](#provider_aws) | n/a     |
 
 ## Modules
 
@@ -53,24 +54,25 @@ No modules.
 
 ## Resources
 
-| Name | Type |
-|------|------|
-| [aws_iam_role.statemachine](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/iam_role) | resource |
-| [aws_iam_role_policy.logs](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/iam_role_policy) | resource |
-| [aws_iam_role_policy.xray](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/iam_role_policy) | resource |
-| [aws_sfn_activity.sfn_activity](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/sfn_activity) | resource |
-| [aws_sfn_state_machine.drink](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/sfn_state_machine) | resource |
+| Name                                                                                                                              | Type     |
+| --------------------------------------------------------------------------------------------------------------------------------- | -------- |
+| [aws_iam_role.statemachine](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/iam_role)                 | resource |
+| [aws_iam_role_policy.logs](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/iam_role_policy)           | resource |
+| [aws_iam_role_policy.xray](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/iam_role_policy)           | resource |
+| [aws_sfn_activity.sfn_activity](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/sfn_activity)         | resource |
+| [aws_sfn_state_machine.drink](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/sfn_state_machine)      | resource |
 | [aws_sfn_state_machine.helloworld](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/sfn_state_machine) | resource |
 
 ## Inputs
 
-| Name | Description | Type | Default | Required |
-|------|-------------|------|---------|:--------:|
-| <a name="input_common_tags"></a> [common\_tags](#input\_common\_tags) | This is to help you add tags to your cloud objects | `map(any)` | n/a | yes |
+| Name                                                               | Description                                        | Type       | Default | Required |
+| ------------------------------------------------------------------ | -------------------------------------------------- | ---------- | ------- | :------: |
+| <a name="input_common_tags"></a> [common_tags](#input_common_tags) | This is to help you add tags to your cloud objects | `map(any)` | n/a     |   yes    |
 
 ## Outputs
 
 No outputs.
+
 <!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 
 ## Instructions
@@ -95,7 +97,7 @@ Please use the [issue tracker](https://github.com/jameswoolfenden/terraform-aws-
 
 ## Copyrights
 
-Copyright © 2019-2021 James Woolfenden
+Copyright © 2019-2022 James Woolfenden
 
 ## License
 
