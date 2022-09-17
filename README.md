@@ -73,6 +73,64 @@ No modules.
 No outputs.
 <!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 
+## Policy
+
+This is the policy required to build this project:
+
+<!-- BEGINNING OF PRE-COMMIT-PIKE DOCS HOOK -->
+The Terraform resource required is:
+
+```golang
+resource "aws_iam_policy" "terraformXVlBzgba" {
+  name        = "terraformXVlBzgba"
+  path        = "/"
+  description = "Add Description"
+
+  policy = jsonencode({
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "VisualEditor0",
+            "Effect": "Allow",
+            "Action": [
+                "iam:CreateRole",
+                "iam:DeleteRole",
+                "iam:DeleteRolePolicy",
+                "iam:GetRole",
+                "iam:GetRolePolicy",
+                "iam:ListAttachedRolePolicies",
+                "iam:ListInstanceProfilesForRole",
+                "iam:ListRolePolicies",
+                "iam:PassRole",
+                "iam:PutRolePolicy"
+            ],
+            "Resource": "*"
+        },
+        {
+            "Sid": "VisualEditor1",
+            "Effect": "Allow",
+            "Action": [
+                "states:CreateActivity",
+                "states:CreateStateMachine",
+                "states:DeleteActivity",
+                "states:DeleteStateMachine",
+                "states:DescribeActivity",
+                "states:DescribeStateMachine",
+                "states:ListTagsForResource",
+                "states:TagResource",
+                "states:UntagResource",
+                "states:UpdateStateMachine"
+            ],
+            "Resource": "*"
+        }
+    ]
+})
+}
+
+
+```
+<!-- END OF PRE-COMMIT-PIKE DOCS HOOK -->
+
 ## Instructions
 
 ## Related Projects
@@ -126,11 +184,3 @@ under the License.
 
 [jameswoolfenden_homepage]: https://github.com/jameswoolfenden
 [jameswoolfenden_avatar]: https://github.com/jameswoolfenden.png?size=150
-[github]: https://github.com/jameswoolfenden
-[linkedin]: https://www.linkedin.com/in/JamesWoolfenden
-[twitter]: https://twitter.com/JimWoolfenden
-[share_twitter]: https://twitter.com/intent/tweet/?text=terraform-aws-statemachine&url=https://github.com/jameswoolfenden/terraform-aws-statemachine
-[share_linkedin]: https://www.linkedin.com/shareArticle?mini=true&title=terraform-aws-statemachine&url=https://github.com/jameswoolfenden/terraform-aws-statemachine
-[share_reddit]: https://reddit.com/submit/?url=https://github.com/jameswoolfenden/terraform-aws-statemachine
-[share_facebook]: https://facebook.com/sharer/sharer.php?u=https://github.com/jameswoolfenden/terraform-aws-statemachine
-[share_email]: mailto:?subject=terraform-aws-statemachine&body=https://github.com/jameswoolfenden/terraform-aws-statemachine
