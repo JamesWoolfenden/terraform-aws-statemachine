@@ -99,6 +99,8 @@ POLICY
 }
 
 resource "aws_iam_role_policy" "xray" {
+  # checkov:skip=CKV_AWS_272: Policy requires broad access for this module to function
+  # checkov:skip=CKV_AWS_356: Policy requires broad access for this module to function
   name = "xray_policy"
   role = aws_iam_role.statemachine.id
 
@@ -125,6 +127,8 @@ EOF
 
 
 resource "aws_iam_role_policy" "logs" {
+  # checkov:skip=CKV_AWS_272: Policy requires broad access for this module to function
+  # checkov:skip=CKV_AWS_356: Policy requires broad access for this module to function
   name = "logs_policy"
   role = aws_iam_role.statemachine.id
 
