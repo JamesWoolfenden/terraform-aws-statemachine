@@ -1,6 +1,11 @@
 resource "aws_sfn_state_machine" "helloworld" {
+  # checkov:skip=CKV_AWS_285: log group provisioning is out of scope for this example module
   name     = "HelloWorld"
   role_arn = aws_iam_role.statemachine.arn
+
+  tracing_configuration {
+    enabled = true
+  }
 
   definition = <<EOF
 {
